@@ -1,0 +1,281 @@
+#newinfo{
+	position:relative;
+	width:100%;
+}
+#newinfo .main{
+	width: 1280px;
+	margin:0 auto;
+}
+#newinfo .main .title{
+	position:relative;
+	opacity:1;
+	top:0;
+	width: 100%;
+	height: 150px;
+	transition:all .5s;
+	background: url("../../img/newinfo/newinf.png") center no-repeat;
+}
+#newinfo .main .title.hide{
+	opacity:0;
+	top:80px;
+}
+/* 信息内容选项卡*/
+#newinfo .main .infolist{
+	margin-top:20px;
+	width: 100%;
+	height: 480px;
+}
+#newinfo .main .infolist>ul{
+	width: 100%;
+	height: 100%;
+}
+.main .infolist>ul li{
+	float:left;
+	position:relative;
+	opacity:1;
+	top:0;
+	width: 418px;
+	height: 216px;
+	margin:11px 4px;
+	background-size:contain;
+	cursor: pointer;
+	background-position-y: 20px;
+	background-repeat:no-repeat;
+	transition:all .5s;
+}
+.main .infolist>ul li.hide{
+	opacity:0;
+	top:80px;
+}
+.main .infolist>ul li i{
+	display: block;
+	position:absolute;
+	background-color: #a57c47;
+}
+
+.infolist>ul li i:nth-child(even){
+	width:2px;
+    height:0px;
+}
+.infolist>ul li i:nth-child(odd){
+	width:0px;
+    height:2px;
+}
+.main .infolist>ul li .i1{
+	top:8px;
+	left:9px;
+}
+.main .infolist>ul li .i2{
+	top:8px;
+	right:9px;
+}
+.main .infolist>ul li .i3,.main .infolist>ul li .i4{
+	bottom:28px;
+	right:9px;
+	width:0;
+	transform: rotateZ(180deg);
+}
+.main .infolist>ul li .i4{
+	width:2px;
+	left:9px;
+}
+.main .infolist>ul li:hover{
+	background-position-y: 0px;
+}
+.main .infolist>ul li:hover .i1{
+	animation:goRow 0.1s 0.3s linear forwards;
+}
+.main .infolist>ul li:hover .i2{
+	animation:goCol 0.1s 0.4s linear forwards;
+}
+.main .infolist>ul li:hover .i3{
+	animation:goRow 0.1s 0.5s linear  forwards;
+}
+.main .infolist>ul li:hover .i4{
+	animation:goCol 0.1s 0.6s linear forwards;
+}
+@keyframes goRow{
+	from{
+		width:0;
+	}
+	to{
+		width:400px;
+	}
+}
+@keyframes goCol{
+	from{
+		height:0;
+	}
+	to{
+		height:180px;
+	}
+}
+.main .infolist>ul li:nth-child(1){
+	background-image: url("../../img/newinfo/p1.png");
+}
+.main .infolist>ul li:nth-child(2){
+	background-image: url("../../img/newinfo/p2.png");
+}
+.main .infolist>ul li:nth-child(3){
+	background-image: url("../../img/newinfo/p3.png");
+}
+.main .infolist>ul li:nth-child(4){
+	background-image: url("../../img/newinfo/p4.png");
+}
+.main .infolist>ul li:nth-child(5){
+	background-image: url("../../img/newinfo/p5.png");
+}
+.main .infolist>ul li:nth-child(6){
+	background-image: url("../../img/newinfo/p6.png");
+}
+
+
+/*新版本对应的内容*/
+#newinfo  .infocon{
+	position:fixed;
+	opacity:0;
+	top:0;
+	left:0;
+	z-index:999999;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5)
+}
+#newinfo  .infocon li{
+	/*display: none;*/
+	position:absolute;
+	top:0;
+	left:80px;
+	width: 1180px;
+	height: 735px;
+	margin:-50px 0 0 -70px;
+}
+#newinfo  .infocon li:nth-child(1){
+	background-image: url("../../img/newinfo/ren1.png")
+}
+#newinfo  .infocon li:nth-child(2){
+	background-image: url("../../img/newinfo/ren2.png")
+}
+#newinfo  .infocon li:nth-child(3){
+	background-image: url("../../img/newinfo/ren3.png")
+}
+#newinfo  .infocon li:nth-child(4){
+	background-image: url("../../img/newinfo/ren4.png")
+}
+#newinfo  .infocon li:nth-child(5){
+	background-image: url("../../img/newinfo/ren5.png")
+}
+#newinfo  .infocon li:nth-child(6){
+	background-image: url("../../img/newinfo/ren6.png")
+}
+#newinfo  .infocon .close{
+	/*background-color: #f00;*/
+	position:absolute;
+	top:120px;
+	right:0px;
+	/*margin:auto;*/
+	width: 34px;
+	height: 34px;
+	
+}
+ .infocon .close img{
+	display: block;
+	transition:.5s;
+}
+ .infocon .close:hover img{
+	transform:rotate(360deg);
+}
+/*文案*/
+ .infocon .text{
+	overflow: hidden;
+    position: relative;
+    padding-right:50px;
+    width: 410px;
+    height: 315px;
+    margin: 210px 0 0 550px;
+    font-size: 16px;
+}
+ .infocon .text .mainTxt{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 410px;
+    max-height: 2000px;
+    line-height: 35px;
+}
+.infocon .text .boldRed{
+	font-weight: bold;
+    color: #e5402a;
+}
+.infocon .text .boldBlack{
+	font-weight: bold;
+    color: #000;
+}
+.infocon .text .normal{
+	color: #333;
+}
+.infocon .text .mBottom{
+	margin-bottom: 35px;
+}
+.infocon .scrollBox{
+	opacity:0;
+	position: absolute;
+	top:0;
+	right:30px;
+	height: 100%;
+    width: 8px;
+    background: #e2e2e2;
+	cursor:pointer;
+	transition:all .5s;
+}
+.infocon .text:hover .scrollBox{
+	opacity:1;
+}
+.infocon .scrollBox .scrollBar{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width: 100%;
+	height: 30px;
+	background-color: #000;
+}
+/* 前进后退按钮 */
+.infocon .pre,.infocon .next{
+	position:absolute;
+	top:0;
+	bottom:0;
+	margin:auto;
+	width: 46px;
+	height: 18px;
+}
+.infocon  .pre{
+	right:90px;
+}
+.infocon  .next{
+	left:90px;
+}
+.infocon .btn img{
+	position:absolute;
+}
+.infocon .pre:hover img{
+	animation:preMove 1s linear infinite alternate;
+}
+.infocon .next:hover img{
+	animation:nextMove 1s linear infinite alternate;
+}
+@keyframes nextMove{
+	from{
+		left:0;
+	}
+	to{
+		left:-20px;
+	}
+}
+@keyframes preMove{
+	from{
+		left:0;
+	}
+	to{
+		left:20px;
+	}
+}

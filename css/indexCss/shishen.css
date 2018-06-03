@@ -1,0 +1,326 @@
+#shishen{
+	width: 1400px;
+	height: 510px;
+	margin:0 auto;
+	margin-top: 37px;
+	background: url("../../img/index/content/shishen.jpg") bottom center no-repeat;
+}
+#shishen .title{
+	width: 1200px;
+	height: 96px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+}
+#shishen .title .tab-name-pinan{
+	float: left;
+	width: 130px;
+	height: 69px;
+	margin-top: 16px;
+	margin-left: 12px;
+	background-image:url("../../img/index/index.png");
+	background-position:-411px -587px;
+}
+#shishen .title .division-dot{
+	float: left;
+    display: block;
+    width: 44px;
+    height: 4px;
+    background: url(../../img/index/index.png) -1422px -153px;
+    margin: 48.5px 10px 0;
+}
+#shishen .title  .title-tab{
+    position: relative;
+    float: left;
+    display: block;
+    width: 100px;
+    height: 91px;
+    margin: 5px 8px 0;
+    cursor: pointer;
+}
+#shishen .title .title-tab span{
+	display: block;
+	width: 70px;
+    height: 33px;
+    background-position: 158px -865px;
+    margin: 28.5px auto 0;
+	background: url(../../img/index/index.png);
+}
+#shishen .title .shishen-tab span{
+	background-position:-1401px -865px;
+}
+#shishen .title .role-tab span{
+	background-position:-1473px -1442px;
+}
+#shishen .title .title-tab i{
+	position: absolute;
+	opacity:0;
+	top:20px;
+	left:0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	transition:.5s;
+	background: url(../../img/index/index_z_6e70f35.png);
+	background-position:-1629px -617px;
+}
+#shishen .title .title-tab:hover i{
+	opacity:1;
+	top:5px;
+}
+#shishen .title .title-tab.on i{
+	opacity:1;
+	top:5px;
+}
+/*式神内容*/
+#shishen .mainCon{
+	position:relative;
+	width: 1200px;
+	height: 304px;
+	margin:0 auto;
+}
+#shishen .shishen-con{
+	position: absolute;
+	opacity: 1;
+	width: 1200px;
+	height: 304px;
+	margin:0 auto;
+}
+#shishen .shishen-con .topbar{
+	width: 800px;
+    height: 50px;
+    margin-bottom: 33px;
+    border-bottom: 1px dotted #333;
+}
+#shishen .shishen-con .topbar .shishen-tabs{
+	float: left;
+	width: 240px;
+	height: 100%;
+}
+#shishen .shishen-con .topbar .viewall{
+	float: left;
+	width: 131px;
+	height: 29px;
+	margin-top: 10px;
+	background: url("../../img/index/content/viewAll_btn.png") no-repeat 
+}
+#shishen .shishen-con .shishen-tabs>span{
+	line-height: 50px;
+	font-size: 18px;
+	margin:0 10px;
+	font-weight:bolder;
+	cursor:pointer;
+}
+#shishen .shishen-con .shishen-tabs>span.on{
+	color:#cea441
+}
+#shishen .shishen-con .shishenwrap{
+	position:relative;
+	width: 828px;
+	height: 210px;
+}
+#shishen .shishen-con .shishenList{
+	position:relative;
+	width: 828px;
+	height: 210px;
+	overflow: hidden;
+}
+#shishen .shishen-con .shishenwrap .btn{
+	display: none;
+	position:absolute;
+	top:50%;
+	margin-top:-16.5px;
+	z-index: 1;
+	width: 42px;
+	height: 33px;
+	cursor: pointer;
+	background-image: url("../../img/index/index.png")
+}
+#shishen .shishen-con .shishenwrap .btn.on{
+	opacity: 1;
+}
+#shishen .shishen-con .shishenwrap .btn.left{
+	left:-20px;
+	background-position: -1399px -832px;
+}
+#shishen .shishen-con .shishenwrap .btn.left:hover{
+	background-position: -1399px -964px;
+}
+#shishen .shishen-con .shishenwrap .btn.right{
+	right:30px;
+	background-position: -1401px -931px;
+}
+#shishen .shishen-con .shishenwrap .btn.right:hover{
+	background-position: -1401px -898px;
+}
+#shishen .shishen-con .shishenList>ul{
+	position:absolute;
+	width: 1000%;
+	height: 210px;
+}
+#shishen .shishen-con .shishenList>ul li{
+    float:left;
+	padding: 5px 24px 0 0;
+    height: 202px;
+    border-right: 1px solid #95a7a4;
+    margin-right: 24px;
+}
+#shishen .shishen-con .shishenList>ul li:nth-child(6n){
+	border-color:transparent;
+}
+#shishen .shishen-con .shishenList .shishen{
+	position: relative;
+	display: block;
+	width: 89px;
+	height: 92px;
+	margin-bottom:20px;
+	border-radius: 50%;
+	background: #fff url("../../img/index/index.png") -1218px 
+	-1192px;
+}
+#shishen .shishenList .shishen>img,
+#shishen .shishenList .shishen>span{
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	width: 81px;
+	height: 81px;
+	border-radius: 50%;
+}
+#shishen  .shishenList .shishen span{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 92px;
+	color:#fff;
+	background-color:rgba(0,0,0,.5);
+	transition: .5s;
+}
+#shishen .shishenList .shishen:hover span{
+	opacity: 1;
+}
+#shishen .shishenList .new{
+	position: absolute;
+	top: 0;
+	right:-10px;
+	width: 31px;
+	height: 36px;
+	background: url("../../img/index/content/new_icon.png") 
+}
+/*式神主角*/
+#shishen .shishen-zhujue{
+	position: absolute;
+	display: none;
+	width: 1200px;
+	height: 304px;
+	margin:0 auto;
+}
+#shishen .shishen-zhujue .lefttab{
+	float:left;
+	width: 150px;
+	height: 300px;
+	margin:20px 20px 0 0 ;
+}
+#shishen .shishen-zhujue .zhujue-container{
+	position: relative;
+	width: 800px;
+	height: 300px;
+}
+#shishen .shishen-zhujue .lefttab li{
+	position: relative;
+	width: 144px;
+	height: 36px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 36px;
+	border:2px solid #ddd;
+	transition: .3s;
+	cursor: pointer;
+}
+
+#shishen .shishen-zhujue .lefttab i.arrow{
+	opacity: 0;
+	position: absolute;
+	top: 12px;
+	right: -18px;
+	width: 0;
+	height:0;
+	border:5px solid transparent;
+	border-left-color: #000;
+	transition: .5s;
+}
+#shishen .shishen-zhujue .lefttab li:hover{
+	border:2px solid #000;
+	background-color: #fff;
+}
+#shishen .shishen-zhujue .lefttab li.on{
+	border:2px solid #000;
+	background-color: #fff;
+}
+#shishen .shishen-zhujue .lefttab li.on i.arrow{
+	opacity: 1;
+}
+#shishen .shishen-zhujue .lefttab li:hover i.arrow{
+	opacity: 1;
+}
+#shishen .zhujue-container .pic{
+
+}
+#shishen .zhujue-container .rolWrap{
+	position: absolute;
+	display: none;
+	top:0;
+	right: 0;
+	width: 590px;
+	height: 300px;
+}
+#shishen .zhujue-container .rolWrap.on{
+	display: block;
+}
+#shishen .zhujue-container .role a{
+	display: block;
+	float: left;
+	width: 310px;
+	height: 340px;
+}
+#shishen .zhujue-container .role a>img{
+	display: block;
+}
+#shishen .zhujue-container .rolInfo{
+	float: right;
+	width: 230px;
+	height: 250px;
+	margin-top:50px;
+}
+#shishen .zhujue-container .rolInfo .name{
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	border-bottom: 2px solid #000;
+}
+#shishen .zhujue-container .rolInfo .infoCon{
+	margin-top: 4px;
+	line-height: 25px;
+	border-top: 1px solid #000;
+}
+#shishen .zhujue-container .role .rolInfo .number{
+	width: 38px;
+	height: 23px;
+	background: url("../../img/index/index.png");
+}
+#shishen .zhujue-container .role1 .rolInfo .number{
+	background-position: 120px 351px;
+}
+#shishen .zhujue-container .role2 .rolInfo .number{
+	background-position: 158px 374px;
+}
+#shishen .zhujue-container .role3 .rolInfo .number{
+	background-position: 120px 374px;
+}
+#shishen .zhujue-container .role4 .rolInfo .number{
+	background-position: 158px 351px;;
+}

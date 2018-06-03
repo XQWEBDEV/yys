@@ -1,0 +1,67 @@
+#video{
+	width: 1400px;
+	height: 454px;
+	margin:0 auto;
+	margin-top: 50px;
+	padding-top: 60px;
+	background:url("../../img/index/video/video_bg.jpg") center;
+}
+#video .mianCon{
+	width: 1220px;
+	height: 430px;
+	margin:0 auto;
+}
+#video .mianCon .conlist{
+	float: left;
+	width: 580px;
+	height:440px;
+}
+#video .mianCon .conlist>li{
+	position: relative;
+	float:left;
+	width: 270px;
+	height: 200px;
+	margin: 0 20px 20px 0;
+	overflow: hidden;
+}
+#video .mianCon .conlist>li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#video .mianCon .conlist>li.l1 a .bg{
+	display: block;
+	width: 228px;
+	height: 149px;
+	background-image: url("../../img/index/index.png");
+}
+#video .mianCon .conlist.walllist>li.l1 a .bg{
+	background-position: 458px -613px;
+}
+#video .mianCon .conlist.videolist>li.l1 a .bg{
+	background-position: 479px -465px;
+}
+#video .mianCon .conlist.walllist{
+	float: right;
+}
+#video .mianCon .conlist>li img{
+	display: block;
+	width: 100%;
+	height: 155px;
+	transform: scale(1);
+	transition: .5s;
+}
+#video .mianCon .conlist>li:hover img{
+	transform:scale(1.1);
+}
+#video .mianCon .conlist>li .title{
+	position: absolute;
+	bottom:0;
+	width: 100%;
+	color:#000;
+	line-height: 45px;
+	text-indent: 20px;
+}
+#video .mianCon .conlist.videolist>li .title{
+	background-color: #fff;
+}

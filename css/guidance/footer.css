@@ -1,0 +1,67 @@
+#footer{
+	width: 100%;
+	margin-top:60px;
+}
+#footer .share-foot{
+	text-align: center;
+    color: #fff;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+#footer .share-txt{
+	float: left;
+	margin-right: 20px;
+}
+#footer .share-iconBtn{
+	width: 430px;
+	height: 20px;
+	margin:0 auto;
+}
+#footer .share-iconBtn li{
+	float:left;
+	margin:0 5px;
+}
+#footer .share-iconBtn li a{
+	color:#fff;
+}
+#footer .share-iconBtn li a i{
+	/*color:#ff;*/
+	font-size:16px;
+}
+#footer .f-copyRight{
+	width: 840px;
+	height: 48px;
+	margin:0 auto;
+}
+#footer .f-copy-logo{
+	width: 300px;
+	height: 48px;
+	float:left;
+}
+#footer .f-copy-logo a{
+	float:left;
+	margin-top:15px;
+	line-height: 48px;
+}
+#footer .share-iconBtn li a:hover{
+	color:#f60;
+	text-decoration: underline;
+}
+#footer .nie-cn-nav{
+	float:left;
+	margin-left:30px;
+	color:#aaa;
+}
+#footer .nie-cn-nav .nie-cn-nav-i1{
+}
+#footer .nie-cn-nav a{
+	color:#bbb;
+	font-style: normal;
+}
+#footer .nie-cn-nav a:hover{
+	color:#f60;
+	text-decoration: underline;
+}
+#footer .nie-cn-nav .nie-cn-reportcenter{
+	margin-left: 20px;
+}

@@ -1,0 +1,324 @@
+body {
+    min-width: 1400px;
+}
+#header{
+	position: relative;
+    width: 100%;
+    height: 628px;
+    background: url(../../img/index/main_banner.jpg) top center;
+}
+#nav{
+	position:absolute;
+    z-index: 100;
+	width:100%;
+	height: 100px;
+}
+#nav.scroll{
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(255,255,255,.8);
+}
+#nav.hover{
+    background: rgba(255,255,255,.8);
+}
+#nav  .nav-menulist{
+	float:right;
+	width: 700px;
+	height: 25px;
+    margin-top: 40px;
+    margin-right: 40px;
+    font-size:16px;
+}
+#nav  .nav-menulist>li{
+	float:left;
+}
+#nav  .nav-menulist .haveHide:hover .arrow{
+    opacity:1;
+}
+#nav  .nav-menulist>li.mNav{
+	font-size: 16px;
+    line-height: 25px;
+}
+#nav  .nav-menulist>li a{
+	display: block;
+    color: #000;
+    transition: .3s;
+    padding: 0 20px 35px;
+}
+#nav  .nav-menulist>li a:hover{
+	color: #cc4336;
+}
+#nav  .nav-menulist>li.line{
+	width: 15px;
+    height: 25px;
+    background: url(../../img/index/index.png) 16px 116px;
+}
+#nav .ulHide{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 200px;
+    background: #e1ebeb;
+}
+#nav .ulHide .hide{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#nav .mNav .arrow{
+    display: block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: .3s;
+    margin: -20px 0px 0px 35px;
+    border: 10px solid #e1ebeb;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+#nav ul.mainList li.mNav.hover .arrow{
+    display: block;
+}
+#nav .hideList li{
+    float: right;
+}
+#nav .hideList li.mHideLi{
+    position: relative;
+    top: 40px;
+    width: 215px;
+    height: 150px;
+    transition: .5s;
+}
+#nav .hideList li.border{
+    width: 1px;
+    height: 105px;
+    background: #ccc;
+    margin-top: 40px;
+}
+#nav .hideList li.mHideLi i{
+    display: block;
+    margin: 0 auto;
+    background-image: url("../../img/index/index.png");
+}
+#nav .hideList li.mHideLi p{
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000;
+}
+#nav .hideList li.mHideLi i.i1 {
+    width: 65px;
+    height: 71px;
+    background-position: 158px -230px;
+}
+#nav .hideList li.mHideLi i.i2 {
+    width: 71px;
+    height: 70px;
+    background-position: 158px -301px;
+}
+#nav .hideList li.mHideLi:hover{
+    top: 20px;
+}
+#nav .logo{
+    display: none;
+    width: 370px;
+    height: 100%;
+}
+#nav .logo .qrcode{
+    float:left;
+    width: 123px;
+    height: 100%;
+}
+#nav .logo .qrcode>p{
+    float:left;
+    font-size: 14px;
+    width: 14px;
+    margin: 10px 12px;
+}
+#nav .logo .qrcode img{
+    float:left;
+    width: 73px;
+    height: 73px;
+    margin: 10px 0;
+}
+#nav .logo .mLogo{
+    float:left;
+    width: 246px;
+    height: 73px;
+    border-left: 1px solid #999;
+    margin-top:10px;
+}
+#nav .logo .mLogo .img{
+    width: 73px;
+    height: 73px;
+    background: url("../../img/index/index.png") 158px -157px;
+}
+#nav .logo .mLogo p{
+    float:left;
+    margin-left: 10px;
+}
+#nav .logo .mLogo .p1{
+    font-size:30px;
+    font-weight: bold;
+}
+#nav .logo .mLogo p.p2{
+    font-size:16px;
+}
+#header .logo2{
+    position:absolute;
+    opacity:0;
+    top:70px;
+    left:-70px;
+    width: 70px;
+    height: 199px;
+    transform: scale(1);
+    transition:transform .3s,opacity 1s,left 1s;
+    background:url("../../img/index/logo.png") no-repeat;
+}
+#header .logo2.scale{
+    transform: scale(0);
+}
+/*角色*/
+#role{
+    position: relative;
+    width: 1105px;
+    height: 584px;
+    margin: 0 auto;
+    user-select: none;
+}
+#role .bottomimg{
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index: 2;
+}
+#role .role{
+    position:absolute;
+    opacity:1;
+    bottom: 2px;
+    opacity:1;
+    transition: 1s;
+}
+
+ #role .role1{
+    width: 470px;
+    height: 537px;
+    left:0;
+    background: url("../../img/index/role/role1.png") no-repeat;
+}
+#role .role2{
+    width: 423px;
+    height: 544px;
+    left:319px;
+    background: url("../../img/index/role/role2.png") no-repeat;
+} 
+ #role .role3{
+    width: 491px;
+    height: 583px;
+    left:0;
+    background: url("../../img/index/role/role3.png") no-repeat;
+}
+#role .role4{
+    width: 503px;
+    height: 501px;
+    left:234px;
+    background: url("../../img/index/role/role4.png") no-repeat;
+} 
+#role .role3.hide, #role .role4.hide {
+    left: 117px;
+    opacity: 0;
+}
+#role .role1.hide, #role .role2.hide {
+    left: 150px;
+    opacity: 0;
+}
+#role .btn{
+    position: absolute;
+    left:800px;
+    top:290px;
+    width: 41px;
+    height: 66px;
+    transform: scale(1);
+    transition: .5s;
+    cursor:pointer;
+    background: url(../../img/index/index.png) 158px -439px;
+}
+#role .btn:hover{
+    transform:scale(1.15);
+}
+#server{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width: 90px;
+    z-index:10;
+    height: 105px;
+    cursor:pointer;
+}
+#server img{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+#server:hover{
+    opacity:.8;
+}
+/*服务列表*/
+ #serverlist{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,.8);
+}
+ #serverlist .main.show {
+   top: 50%;
+   left: 50%;
+   transform: scale(1);
+} 
+#serverlist .main {
+   position: absolute;
+   top: 65%;
+   left: 35%;  
+   width: 1399px;
+   height: 724px;
+   background: url(../../img/index/pop_bg.png);
+   margin-left: -830px;
+   margin-top: -408px;
+   transform: scale(0); 
+   transition: transform .5s;
+}
+ #serverlist .main .close{
+   position: absolute;
+   top: 100px;
+   right: -10px;
+   width: 31px;
+   height: 31px;
+}
+#serverlist .close .closeImg{
+   display: block;
+   width: 31px;
+   height: 31px;
+   background: url("../../img/index/index.png") 115px -714px;
+   cursor: pointer;
+   transform: rotate(0deg);
+   transition: .3s;
+}
+#serverlist .close:hover .closeImg{
+   transform:rotate(360deg);;
+}
+#serverlist .botImg {
+   position: absolute;
+   bottom: 0;
+   right: -75px;
+   width: 254px;
+   height: 176px;
+   background: url(../../img/index/index.png) -330px -857px;
+} 

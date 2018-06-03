@@ -1,0 +1,179 @@
+#tongren{
+	width: 1200px;
+	height: 540px;
+	margin:0 auto;
+	margin-top: 80px;
+}
+#tongren .tongren-topbar{
+	width: 100%;
+	height: 80px;
+}
+#tongren .tongren-topbar .tongren-title{
+	float:left;
+	width: 114px;
+	height: 105px;
+	margin: -14px 30px 0 0 ;
+	background-image: url("../../img/index/index.png");
+	background-position: 630px -666px; 
+}
+#tongren .tongren-topbar .tongren-tabs{
+	float: left;
+	width: 1056px;
+	height: 78px;
+	border-bottom: 2px solid #000;
+}
+#tongren .tongren-topbar .tongren-tabs>li{
+	float: left;
+	width: 155px;
+	height: 80px;
+	overflow: hidden;
+}
+#tongren .tongren-topbar .tongren-tabs>li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 60px;
+	z-index: 1;
+	border-right:1px dotted #000; 
+}
+#tongren .tongren-topbar .tongren-tabs>li span{
+	position: absolute;
+	display: block;
+	top: 21px;
+	width: 100%;
+	height: 18px;
+	z-index: 2;
+	transition: .3s;
+}
+#tongren .tongren-tabs>li span em{
+	display: block;
+	width: 75px;
+	height: 18px;
+	margin:0 auto;
+	background-image:url("../../img/index/index.png"); 
+}
+#tongren .tongren-topbar .tongren-tab1 span em{
+	background-position: 158px 291px;
+}
+#tongren .tongren-topbar .tongren-tab2 span em{
+	background-position: 158px 256px;
+}
+#tongren .tongren-topbar .tongren-tab3 span em{
+	background-position: 158px 274px;
+}
+#tongren .tongren-topbar .tongren-tab4 span em{
+	background-position: 158px 310px;
+}
+#tongren .tongren-topbar .tongren-tab5 span em{
+	background-position: 158px 327px;
+}
+#tongren .tongren-topbar .tongren-tab6 span em{
+	width: 90px;
+	background-position: 306px 406px;
+}
+#tongren .tongren-topbar .tongren-tabs>li i{
+	position: absolute;
+	top:80px;
+	width: 155px;
+	height: 54px;
+	transition: .5s;
+	background-image:url("../../img/index/fan/icons.png");
+}
+#tongren .tongren-topbar .tongren-tabs .tongren-tab1 i{
+	background-position: 0 0;
+}
+#tongren .tongren-topbar .tongren-tabs .tongren-tab2 i{
+	background-position: -171px 0;
+}
+#tongren .tongren-topbar .tongren-tabs .tongren-tab3 i{
+	background-position: -322px 0;
+}
+#tongren .tongren-topbar .tongren-tabs .tongren-tab4 i{
+	background-position: -479px 0;
+}
+#tongren .tongren-topbar .tongren-tabs .tongren-tab5 i{
+	background-position: 433px 0;
+}
+#tongren .tongren-topbar .tongren-tabs .tongren-tab6 i{
+	background-position: 144px 0;
+}
+#tongren .tongren-topbar .tongren-tabs>li.on i{
+	top:27px;
+}
+#tongren .tongren-topbar .tongren-tabs>li.on span{
+	top:5px;
+}
+/*内容区*/
+#tongren .tongren-con{
+	width: 100%;
+	height: 420px;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+#tongren .tongren-con .tongren-wrap{
+	width: 100%;
+	height: 100%;
+}
+#tongren .tongren-con .tongren-pic{
+	position:relative;
+	width: 1220px;
+	height: 100%;
+	overflow: hidden;
+}
+#tongren .tongren-con .tongren-swp{
+	position:absolute;
+	width: 1000%;
+	height: 100%
+}
+#tongren .tongren-con .tongren-swp>ul{
+	float:left;
+	width: 1220px;
+	height: 100%;
+}
+#tongren .tongren-con .tongren-swp>ul li{
+	float: left;
+    width: 285px;
+    height: 200px;
+    margin: 0 10px 10px;
+}
+#tongren .tongren-con .tongren-swp>ul li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #333;
+}
+#tongren .tongren-swp>ul li a img{
+	display: block;
+	width: 100%;
+	height: 163px;
+}
+#tongren  .tongren-swp>ul a span{
+	position: absolute;
+	opacity: 0;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 163px;
+	transition: .5s;
+	background-color:rgba(0,0,0,.4);
+}
+#tongren  .tongren-swp>ul a:hover span{
+	opacity:1;
+}
+#tongren  .tongren-swp>ul a span>b{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 79px;
+    height: 93px;
+    background: url(../../img/index/index.png) -679px -474px;
+}
+#tongren .tongren-con .tongren-swp>ul a p{
+	width:285px;
+	line-height: 40px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}

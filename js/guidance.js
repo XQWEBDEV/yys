@@ -33,9 +33,8 @@ $(function(){
 
 		
 	})();
-	//
+	//视频弹窗
 	(function(){
-		//视频弹窗
 		$videoBtn = $wrap.find(".videoBtn");
 		$video = $wrap.find(".video");
 		$close =$video.find(".videoClose");
